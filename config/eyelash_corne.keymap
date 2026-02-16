@@ -14,6 +14,10 @@
     flavor = "balanced";
 };
 
+&lt {
+    flavor = "balanced";
+};
+
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
@@ -38,6 +42,28 @@
         tri_layer {
             if-layers = <1 2>;
             then-layer = <3>;
+        };
+    };
+
+    macros {
+        control_c: control_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+        control_v: control_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCTRL>
+                ;
         };
     };
 
@@ -91,10 +117,10 @@
         lower_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp TILDE  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                          &mmv MOVE_UP                &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp BSLH 
-&kp GRAVE  &trans        &kp LEFT      &kp UP     &kp DOWN   &kp RIGHT          &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp EQUAL  &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC   &kp PIPE 
-&trans     &trans  &trans  &trans      &trans     &trans     &trans                             &mmv MOVE_DOWN              &trans     &trans     &kp PLUS   &kp MINUS &kp UNDER  &trans
-                                       &trans     &kp DEL    &trans                                                         &trans     &kp BSPC   &trans
+&kp TILDE  &kp EXCL      &kp AT        &kp HASH    &kp DLLR    &kp PRCNT                          &mmv MOVE_UP                &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp BSLH 
+&kp GRAVE  &trans        &kp LEFT      &kp UP      &kp DOWN    &kp RIGHT          &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp EQUAL  &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC   &kp PIPE 
+&trans     &trans  &trans  &trans      &control_c  &control_v  &trans                             &mmv MOVE_DOWN              &trans     &trans     &kp PLUS   &kp MINUS &kp UNDER  &trans
+                                       &trans      &kp DEL     &trans                                                         &trans     &kp BSPC   &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
