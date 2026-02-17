@@ -119,7 +119,7 @@
             bindings = <
 &kp TILDE  &kp EXCL      &kp AT        &kp HASH    &kp DLLR    &kp PRCNT                          &mmv MOVE_UP                &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &kp BSLH 
 &kp GRAVE  &trans        &kp LEFT      &kp UP      &kp DOWN    &kp RIGHT          &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp EQUAL  &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC   &kp PIPE 
-&trans     &trans  &trans  &trans      &control_c  &control_v  &trans                             &mmv MOVE_DOWN              &trans     &trans     &kp PLUS   &kp MINUS &kp UNDER  &trans
+&trans     &trans        &trans        &control_c  &control_v  &trans  &trans                     &mmv MOVE_DOWN              &trans     &trans     &kp PLUS   &kp MINUS &kp UNDER  &trans
                                        &trans      &kp DEL     &trans                                                         &trans     &kp BSPC   &trans
             >;
 
