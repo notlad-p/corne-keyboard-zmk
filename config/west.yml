@@ -19,5 +19,8 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: v0.3.0 # Should match ZMK release.
+    - name: zmk-leader-key
+      remote: urob
+      revision: v0.3.0 # Should match ZMK release.
   self:
     path: config
