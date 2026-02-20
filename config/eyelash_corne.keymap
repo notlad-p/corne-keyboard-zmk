@@ -36,8 +36,6 @@ https://github.com/a741725193/zmk-new_corne/blob/main/README_EN.md
 
 */
 
-ZMK_LEADER_SEQUENCE(hypr_w1, &kp LGUI &kp N1, H A)
-
 &mt {
     flavor = "balanced";
 };
@@ -102,6 +100,13 @@ ZMK_LEADER_SEQUENCE(hypr_w1, &kp LGUI &kp N1, H A)
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        leader1: leader1 {
+            compatible = "zmk,behavior-leader-key";
+            #binding-cells = <0>;
+
+            hypr_w1 { sequence = <H A>; bindings = <&kp LGUI &kp N1>; };
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -140,7 +145,7 @@ ZMK_LEADER_SEQUENCE(hypr_w1, &kp LGUI &kp N1, H A)
           // ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ╭─────────────╮      ╰──────────────├──────────────├───────────────╯  ├─────────────├─────────────┼─────────────┼─────────────┼───────────────┼─────────────┤
               &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &kp B            &kp SPACE                           &kp DOWN                          &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH        &kp LSHIFT
           // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤─────────────┤  ╰─────────────╯                     ╰──────────────╯                  ├─────────────┤─────────────┼─────────────┼─────────────┴───────────────┴─────────────╯
-                                                        &kp LGUI      &kp ENTER     &mo 1                                                                                  &mo 2         &kp SPACE     &leader
+                                                        &kp LGUI      &kp ENTER     &mo 1                                                                                  &mo 2         &kp SPACE     &leader1
           //                                           ╰─────────────┴─────────────┴─────────────╯                                                                        ╰─────────────┴─────────────┴─────────────╯
             >;
 
