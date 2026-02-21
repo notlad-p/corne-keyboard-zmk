@@ -91,6 +91,16 @@ https://github.com/a741725193/zmk-new_corne/blob/main/README_EN.md
                 , <&macro_release &kp LCTRL>
                 ;
         };
+
+        hypr_workspace_1: hypr_workspace_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp N1>
+                , <&macro_release &kp LGUI>
+                ;
+        };
     };
 
     behaviors {
@@ -105,7 +115,7 @@ https://github.com/a741725193/zmk-new_corne/blob/main/README_EN.md
             compatible = "zmk,behavior-leader-key";
             #binding-cells = <0>;
 
-            hypr_w1 { sequence = <H A>; bindings = <&kp LGUI &kp N1>; };
+            hypr_w1 { sequence = <H A>; bindings = <&hypr_workspace_1>; };
         };
     };
 
