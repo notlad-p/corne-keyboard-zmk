@@ -36,6 +36,16 @@ https://github.com/a741725193/zmk-new_corne/blob/main/README_EN.md
 
 */
 
+ZMK_MACRO_ONE_PARAM(
+  hypr_workspace,
+  bindings
+      = <&macro_press &kp LGUI>
+      , <&macro_param_1to1>
+      , <&macro_press &kp MACRO_PLACEHOLDER>
+      , <&macro_release &kp LGUI>
+      ;
+)
+
 &mt {
     flavor = "balanced";
 };
@@ -92,15 +102,6 @@ https://github.com/a741725193/zmk-new_corne/blob/main/README_EN.md
                 ;
         };
 
-        hypr_workspace_1: hypr_workspace_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp N1>
-                , <&macro_release &kp LGUI>
-                ;
-        };
     };
 
     behaviors {
@@ -115,7 +116,16 @@ https://github.com/a741725193/zmk-new_corne/blob/main/README_EN.md
             compatible = "zmk,behavior-leader-key";
             #binding-cells = <0>;
 
-            hypr_w1 { sequence = <H A>; bindings = <&hypr_workspace_1>; };
+            hypr_w1 { sequence = <H A>; bindings = <&hypr_workspace N1>; };
+            hypr_w2 { sequence = <H S>; bindings = <&hypr_workspace N2>; };
+            hypr_w3 { sequence = <H D>; bindings = <&hypr_workspace N3>; };
+            hypr_w4 { sequence = <H F>; bindings = <&hypr_workspace N4>; };
+            hypr_w5 { sequence = <H G>; bindings = <&hypr_workspace N5>; };
+            hypr_w6 { sequence = <H H>; bindings = <&hypr_workspace N6>; };
+            hypr_w7 { sequence = <H J>; bindings = <&hypr_workspace N7>; };
+            hypr_w8 { sequence = <H K>; bindings = <&hypr_workspace N8>; };
+            hypr_w9 { sequence = <H L>; bindings = <&hypr_workspace N9>; };
+            hypr_w10 { sequence = <H ;>; bindings = <&hypr_workspace N0>; };
         };
     };
 
