@@ -46,6 +46,32 @@ ZMK_MACRO_ONE_PARAM(
       ;
 )
 
+ZMK_MACRO_ONE_PARAM(
+  hypr_move_to_workspace,
+  bindings
+      = <&macro_press &kp LGUI>
+      , <&macro_press &kp LSHIFT>
+      , <&macro_param_1to1>
+      , <&macro_tap &kp MACRO_PLACEHOLDER>
+      , <&macro_release &kp LSHIFT>
+      , <&macro_release &kp LGUI>
+      ;
+)
+
+ZMK_MACRO_ONE_PARAM(
+  hypr_move_to_workspace_silent,
+  bindings
+      = <&macro_press &kp LGUI>
+      , <&macro_press &kp LSHIFT>
+      , <&macro_press &kp LCTRL>
+      , <&macro_param_1to1>
+      , <&macro_tap &kp MACRO_PLACEHOLDER>
+      , <&macro_release &kp LCTRL>
+      , <&macro_release &kp LSHIFT>
+      , <&macro_release &kp LGUI>
+      ;
+)
+
 &mt {
     flavor = "balanced";
 };
@@ -101,7 +127,6 @@ ZMK_MACRO_ONE_PARAM(
                 , <&macro_release &kp LCTRL>
                 ;
         };
-
     };
 
     behaviors {
@@ -125,6 +150,18 @@ ZMK_MACRO_ONE_PARAM(
             hypr_w7 { sequence = <H J>; bindings = <&hypr_workspace N7>; };
             hypr_w8 { sequence = <H K>; bindings = <&hypr_workspace N8>; };
             hypr_w9 { sequence = <H L>; bindings = <&hypr_workspace N9>; };
+            hypr_w10 { sequence = <H SEMI>; bindings = <&hypr_workspace N0>; };
+
+            hypr_move_to_w1 { sequence = <H Q>; bindings = <&hypr_move_to_workspace N1>; };
+            hypr_move_to_w2 { sequence = <H W>; bindings = <&hypr_move_to_workspace N2>; };
+            hypr_move_to_w3 { sequence = <H E>; bindings = <&hypr_move_to_workspace N3>; };
+            hypr_move_to_w4 { sequence = <H R>; bindings = <&hypr_move_to_workspace N4>; };
+            hypr_move_to_w5 { sequence = <H T>; bindings = <&hypr_move_to_workspace N5>; };
+            hypr_move_to_w6 { sequence = <H Y>; bindings = <&hypr_move_to_workspace N6>; };
+            hypr_move_to_w7 { sequence = <H U>; bindings = <&hypr_move_to_workspace N7>; };
+            hypr_move_to_w8 { sequence = <H I>; bindings = <&hypr_move_to_workspace N8>; };
+            hypr_move_to_w9 { sequence = <H O>; bindings = <&hypr_move_to_workspace N9>; };
+            hypr_move_to_w10 { sequence = <H P>; bindings = <&hypr_move_to_workspace N0>; };
         };
     };
 
