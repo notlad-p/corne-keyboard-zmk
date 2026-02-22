@@ -41,7 +41,7 @@ ZMK_MACRO_ONE_PARAM(
   bindings
       = <&macro_press &kp LGUI>
       , <&macro_param_1to1>
-      , <&macro_press &kp MACRO_PLACEHOLDER>
+      , <&macro_tap &kp MACRO_PLACEHOLDER>
       , <&macro_release &kp LGUI>
       ;
 )
@@ -125,7 +125,6 @@ ZMK_MACRO_ONE_PARAM(
             hypr_w7 { sequence = <H J>; bindings = <&hypr_workspace N7>; };
             hypr_w8 { sequence = <H K>; bindings = <&hypr_workspace N8>; };
             hypr_w9 { sequence = <H L>; bindings = <&hypr_workspace N9>; };
-            hypr_w10 { sequence = <H ;>; bindings = <&hypr_workspace N0>; };
         };
     };
 
