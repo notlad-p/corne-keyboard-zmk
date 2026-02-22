@@ -36,6 +36,8 @@ https://github.com/a741725193/zmk-new_corne/blob/main/README_EN.md
 
 */
 
+ZMK_COMBO(escape, &kp ESC, LT4 LT3, 0)
+
 ZMK_MACRO_ONE_PARAM(
   hypr_workspace,
   bindings
