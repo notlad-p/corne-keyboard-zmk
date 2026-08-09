@@ -189,10 +189,9 @@ ZMK_MACRO_ONE_PARAM(
             key-positions = <1 15 29>;
         };
 
-
-        hypr_leader {
-            key-positions = <28 41>;
+        hyprleader {
             bindings = <&kp LGUI(SPACE)>;
+            key-positions = <28 41>;
         };
     };
 
