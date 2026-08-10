@@ -48,7 +48,7 @@ layers:
   - SYMBOL
   - NUMBER
   - $$mdi:keyboard-space$$
-  - '&leader1'
+  - '&hypr_leader'
   SYMBOL:
   - '~'
   - '!'
@@ -248,5 +248,3 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
-- p: [28, 41]
-  k: LGUI(SPACE)

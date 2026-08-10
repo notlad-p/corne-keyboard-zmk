@@ -539,20 +539,12 @@ rect.held, rect.combo.held {
 <g transform="translate(756, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 75%">&amp;leader1</tspan></text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;hypr_lea…</tspan></text>
 </g>
 <g class="combo combopos-0">
 <path d="M103,100 l-13,43" class="combo"/>
 <rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
 <text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
-</g>
-<g class="combo combopos-1">
-<path d="M490,161 l-443,0" class="combo"/>
-<path d="M490,161 l443,0" class="combo"/>
-<rect rx="6" ry="6" x="476" y="148" width="28" height="26" class="combo"/>
-<text x="490" y="161" class="combo tap">
-<tspan x="490" dy="-0.6em">LGUI(</tspan><tspan x="490" dy="1.2em">SPACE)</tspan>
-</text>
 </g>
 </g>
 </g>
@@ -817,14 +809,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
 <text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
-<g class="combo combopos-1">
-<path d="M490,161 l-443,0" class="combo"/>
-<path d="M490,161 l443,0" class="combo"/>
-<rect rx="6" ry="6" x="476" y="148" width="28" height="26" class="combo"/>
-<text x="490" y="161" class="combo tap">
-<tspan x="490" dy="-0.6em">LGUI(</tspan><tspan x="490" dy="1.2em">SPACE)</tspan>
-</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 637)" class="layer-NUMBER">
@@ -1087,14 +1071,6 @@ rect.held, rect.combo.held {
 <path d="M103,100 l-13,43" class="combo"/>
 <rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
 <text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
-</g>
-<g class="combo combopos-1">
-<path d="M490,161 l-443,0" class="combo"/>
-<path d="M490,161 l443,0" class="combo"/>
-<rect rx="6" ry="6" x="476" y="148" width="28" height="26" class="combo"/>
-<text x="490" y="161" class="combo tap">
-<tspan x="490" dy="-0.6em">LGUI(</tspan><tspan x="490" dy="1.2em">SPACE)</tspan>
-</text>
 </g>
 </g>
 </g>
@@ -1381,14 +1357,6 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
 <text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
-<g class="combo combopos-1">
-<path d="M490,161 l-443,0" class="combo"/>
-<path d="M490,161 l443,0" class="combo"/>
-<rect rx="6" ry="6" x="476" y="148" width="28" height="26" class="combo"/>
-<text x="490" y="161" class="combo tap">
-<tspan x="490" dy="-0.6em">LGUI(</tspan><tspan x="490" dy="1.2em">SPACE)</tspan>
-</text>
-</g>
 </g>
 </g>
 <g transform="translate(40, 1274)" class="layer-Fn2">
@@ -1646,14 +1614,6 @@ rect.held, rect.combo.held {
 <path d="M103,100 l-13,43" class="combo"/>
 <rect rx="6" ry="6" x="89" y="87" width="28" height="26" class="combo"/>
 <text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
-</g>
-<g class="combo combopos-1">
-<path d="M490,161 l-443,0" class="combo"/>
-<path d="M490,161 l443,0" class="combo"/>
-<rect rx="6" ry="6" x="476" y="148" width="28" height="26" class="combo"/>
-<text x="490" y="161" class="combo tap">
-<tspan x="490" dy="-0.6em">LGUI(</tspan><tspan x="490" dy="1.2em">SPACE)</tspan>
-</text>
 </g>
 </g>
 </g>
