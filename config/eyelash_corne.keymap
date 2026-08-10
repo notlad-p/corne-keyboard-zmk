@@ -129,6 +129,12 @@ ZMK_MACRO_ONE_PARAM(
                 , <&macro_release &kp LCTRL>
                 ;
         };
+
+        hypr_leader: hypr_leader {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LGUI(Space)>;
+        };
     };
 
     behaviors {
@@ -188,11 +194,6 @@ ZMK_MACRO_ONE_PARAM(
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
-
-        hyprleader {
-            bindings = <&kp LGUI(SPACE)>;
-            key-positions = <28 41>;
-        };
     };
 
     keymap {
@@ -208,7 +209,7 @@ ZMK_MACRO_ONE_PARAM(
           // ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤  ╭─────────────╮      ╰──────────────├──────────────├───────────────╯  ├─────────────├─────────────┼─────────────┼─────────────┼───────────────┼─────────────┤
               &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &kp B            &kp SPACE                           &kp DOWN                          &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH        &kp LSHIFT
           // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤─────────────┤  ╰─────────────╯                     ╰──────────────╯                  ├─────────────┤─────────────┼─────────────┼─────────────┴───────────────┴─────────────╯
-                                                        &kp LGUI      &kp ENTER     &mo 1                                                                                  &mo 2         &kp SPACE     &leader1
+                                                        &kp LGUI      &kp ENTER     &mo 1                                                                                  &mo 2         &kp SPACE     &hypr_leader
           //                                           ╰─────────────┴─────────────┴─────────────╯                                                                        ╰─────────────┴─────────────┴─────────────╯
             >;
 
